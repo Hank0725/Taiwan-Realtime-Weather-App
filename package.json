@@ -1,5 +1,6 @@
 {
   "name": "realtime-weather-app",
+  "homepage": "https://<my-username>.github.io/<realtime-weather-app>",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
