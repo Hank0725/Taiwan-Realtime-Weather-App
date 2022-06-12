@@ -2,6 +2,7 @@
   "files": {
     "main.css": "/Taiwan-Realtime-Weather-App/static/css/main.2eacf0f1.css",
     "main.js": "/Taiwan-Realtime-Weather-App/static/js/main.ab31da2b.js",
+    "service-worker.js": "/Taiwan-Realtime-Weather-App/service-worker.js",
     "static/media/day-snowing.svg": "/Taiwan-Realtime-Weather-App/static/media/day-snowing.ba1cbc7669611ee425e874e171d02e70.svg",
     "static/media/night-snowing.svg": "/Taiwan-Realtime-Weather-App/static/media/night-snowing.f00de84c0d9bed3a871ecc6fdd79f1ca.svg",
     "static/media/day-thunderstorm.svg": "/Taiwan-Realtime-Weather-App/static/media/day-thunderstorm.c1e5aabc2d813feeb2e535cff2b025ee.svg",
