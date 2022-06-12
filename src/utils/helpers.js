@@ -26,7 +26,6 @@ export const getMoment = (locationName) => {
 
     // STEP 6：從該地區中找到對應的日期
     const locationDate = location?.time.find((time) => time.dataTime === nowDate);
-
     // STEP 7：找不到的話則拋出錯誤訊息
     if (!locationDate) {
         throw new Error(`找不到 ${locationName} 在 ${nowDate} 的日出日落資料`);
