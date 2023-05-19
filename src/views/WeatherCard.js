@@ -1,6 +1,6 @@
 import React from "react";
 import styled from '@emotion/styled';
-// import dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 import WeatherIcon from '../components/WeatherIcon.js';
 import { ReactComponent as LoadingIcon } from '../images/loading.svg'
@@ -21,7 +21,7 @@ const WeatherCardWrapper = styled.div`
 const Location = styled.div`
   font-size: 28px;
   color: ${({ theme }) => theme.titleColor};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const Description = styled.div`
@@ -55,7 +55,7 @@ const AirFlow = styled.div`
   font-size: 16x;
   font-weight: 300;
   color: ${({ theme }) => theme.textColor};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   svg {
     width: 25px;
     height: auto;
@@ -69,6 +69,7 @@ const Rain = styled.div`
   font-size: 16x;
   font-weight: 300;
   color: ${({ theme }) => theme.textColor};
+  margin-bottom: 10px;
   svg {
     width: 25px;
     height: auto;
@@ -152,8 +153,10 @@ const WeatherCard = ({ weatherElement, moment, fetchData, handleCurrentPageChang
         {new Intl.DateTimeFormat('zh-TW', {
           year: "numeric",
           month: "long",
-          day: "2-digit", hour: 'numeric', minute: 'numeric'
-        }).format(new Date(observationTime))}{''}
+          day: "2-digit",
+          hour: 'numeric',
+          minute: 'numeric'
+        }).format(dayjs(observationTime))}{''}
         {isLoading ? <LoadingIcon /> : <RefreshIcon />}
       </Refresh>
     </WeatherCardWrapper >

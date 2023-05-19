@@ -64,6 +64,7 @@ const App = () => {
   useEffect(() => {
     setCurrentTheme(moment === 'day' ? 'light' : 'dark');
   }, [moment]);
+
   return (
     <ThemeProvider theme={theme[currentTheme]}>
       <Container>
